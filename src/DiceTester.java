@@ -14,24 +14,11 @@ public class DiceTester {
         Character c1 = new Character("m",1,1);
 
         // I made this, because I needed to test myself. The test is over
-        ArrayList<Integer> num = new ArrayList<>();
-        int t = 0;
-        while (t != -1){
+        ArrayList<String> num = new ArrayList<>();
 
-            try {
-                System.out.println("Print a number ( press a letter or -1 to exit )");
-                t = sc.nextInt();
-                if (t == -1){break;}
-                else {num.add(t);}
-            }
-            catch (InputMismatchException e){
-                System.out.println("Exiting code");
-                break;
-            }
+        num.add(c1.getChp1());
 
-        }
-        System.out.println("Your Numbers are " + num);
-        System.out.println("The amount of numbers you entered was " + num.size());
+        System.out.println(num.get(0));
 
 
         boolean b;
