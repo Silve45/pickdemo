@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Character {
     private String name;
     private int age;
     private double weight;
     private String password;
     String Pcheck;
+
 
 
     public Character(String name, int age, double weight) {
@@ -59,9 +63,10 @@ public class Character {
             +"\nThese two items, will be the key to your adventure."
             +"\nIf at any point you wish to leave, press -1";
 
+    public ArrayList<String> a1 = new ArrayList<String>();
 
 
-    public final ThreadLocal<String> chp1 = ThreadLocal.withInitial(() -> "You live in a small town in california "
+    private final ThreadLocal<String> chp1 = ThreadLocal.withInitial(() -> "You live in a small town in california "
             +"\nYour name is " + getName()
             +"\nYou are " + getAge() + " years old."
             +"\nyou have a dice and a coin that your uncle gave you."
@@ -70,13 +75,12 @@ public class Character {
             +"\n Press Y to continue"
 
 
-
-
-
-
     ); // I will have to add that later
 
 
-
+    //alright a note for later
+    // what I want for this is a way to switch threadlocal scenes and to make a easy way to get from story blob to story blob
+    // I want to make a arraylist called "Index" that can switch scenes fluidly and be called on easily
+    // however, it seems threadlocal and
 }// end Public Character
 
