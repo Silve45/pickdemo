@@ -1,8 +1,7 @@
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class DiceTester {
+public class Tester {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Dice d2 = new Dice(1);
