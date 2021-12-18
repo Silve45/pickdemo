@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class DiceTester {
@@ -5,6 +7,32 @@ public class DiceTester {
         Scanner sc = new Scanner(System.in);
         Dice d2 = new Dice(1);
         String i;
+
+
+
+        //added for testing, can delete later
+        Character c1 = new Character("m",1,1);
+
+        // I made this, because I needed to test myself. The test is over
+        ArrayList<Integer> num = new ArrayList<>();
+        int t = 0;
+        while (t != -1){
+
+            try {
+                System.out.println("Print a number ( press a letter or -1 to exit )");
+                t = sc.nextInt();
+                if (t == -1){break;}
+                else {num.add(t);}
+            }
+            catch (InputMismatchException e){
+                System.out.println("Exiting code");
+                break;
+            }
+
+        }
+        System.out.println("Your Numbers are " + num);
+        System.out.println("The amount of numbers you entered was " + num.size());
+
 
         boolean b;
         while (true){
