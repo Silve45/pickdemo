@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Tester {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Dice d2 = new Dice(1);
+        Dice d2 = new Dice();
         String i;
 
 
@@ -13,6 +13,10 @@ public class Tester {
         Character c1 = new Character("m",1,1);
 
         // I made this, because I needed to test myself. The test is over
+       c1.h();
+
+
+
         ArrayList<String> num = new ArrayList<>();
 
         num.add(c1.getChp1());

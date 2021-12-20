@@ -1,7 +1,7 @@
 public class Dice {
      int num;
 
-     public Dice (int num){
+     public Dice (){
          this.num = num;
      }
      int roll() {

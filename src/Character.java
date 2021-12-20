@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Character {
     private String name;
@@ -8,7 +7,7 @@ public class Character {
     private String password;
     String Pcheck;
 
-
+    Dice d1 = new Dice();
 
     public Character(String name, int age, double weight) {
         this.name = name;
@@ -75,12 +74,43 @@ public class Character {
             +"\n Press Y to continue"
 
 
-    ); // I will have to add that later
+    );
+
+//    public final ThreadLocal<Integer> u = ThreadLocal.withInitial(()->
+//
+//            );
+
+
+    public int h (){
+        d1.roll();
+       int i = d1.getNum();
+        switch (i){
+            case 0:
+                System.out.println("case 0");
+                break;
+            case 1:
+                System.out.println("case 1");
+                break;
+            case 2:
+                System.out.println("case 2");
+                break;
+            case 3:
+                System.out.println("case 3");
+
+
+
+
+        }
+        return i;
+    }
+
+
+    // I will have to add that later
 
 
     //alright a note for later
     // what I want for this is a way to switch threadlocal scenes and to make a easy way to get from story blob to story blob
     // I want to make a arraylist called "Index" that can switch scenes fluidly and be called on easily
-    // however, it seems threadlocal and
+    // however, it seems threadlocal and Arraylist don't mesh toghether
 }// end Public Character
 

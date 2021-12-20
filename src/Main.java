@@ -17,7 +17,7 @@ public class Main {
         Character c1 = new Character("Default",100,50);
         MathWords mw = new MathWords("beans", 6, 50);
         Coin c2 = new Coin();
-        Dice d1 = new Dice(1);
+        Dice d1 = new Dice();
 
 
 
