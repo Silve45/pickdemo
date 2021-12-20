@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Tester {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Dice d2 = new Dice();
+        Dice d2 = new Dice(1);
         String i;
 
 

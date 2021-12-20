@@ -7,7 +7,7 @@ public class Character {
     private String password;
     String Pcheck;
 
-    Dice d1 = new Dice();
+    Dice d1 = new Dice(1);
 
     public Character(String name, int age, double weight) {
         this.name = name;
@@ -82,21 +82,29 @@ public class Character {
 
 
     public int h (){
-        d1.roll();
+//        d1.roll();
        int i = d1.getNum();
         switch (i){
-            case 0:
-                System.out.println("case 0");
-                break;
             case 1:
-                System.out.println("case 1");
+                System.out.println(getChp1());
                 break;
             case 2:
                 System.out.println("case 2");
                 break;
             case 3:
                 System.out.println("case 3");
-
+                break;
+            case 4:
+                System.out.println("case 4");
+                break;
+            case 5:
+                System.out.println("case 5");
+            case 6:
+                System.out.println("case 6");
+                break;
+            default:
+                System.out.println("No dice input registered");
+                break;
 
 
 

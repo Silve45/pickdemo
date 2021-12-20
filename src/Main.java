@@ -17,7 +17,7 @@ public class Main {
         Character c1 = new Character("Default",100,50);
         MathWords mw = new MathWords("beans", 6, 50);
         Coin c2 = new Coin();
-        Dice d1 = new Dice();
+        Dice d1 = new Dice(1);
 
 
 
@@ -178,57 +178,59 @@ public class Main {
             }
             else {
                 System.out.println(" Just press [R] please");
-                //                continue; it told me that continue was unnecessary here, so I removed it
             }
 
         }
 
         System.out.println("You rolled a " + d1.getNum());
-        while (free != -1){
-//            free = sc.nextInt(); // not working right now so I disabled it
-            switch (d1.num) {
-                case 1 -> {
-                    b = d1.num == 1;
-                    System.out.println("Initiating roll 1");
-                    System.out.println(c1.getChp1());
-                    free = -1;
-                }
-                case 2 -> {
-                    b = d1.num == 2;
-                    System.out.println("Initiating roll 2");
-                    System.out.println(c1.getChp1());
-                    free = -1;
-                }
-                case 3 -> {
-                    b = d1.num == 3;
-                    System.out.println("Initiating roll 3");
-                    System.out.println(c1.getChp1());
-                    free = -1;
-                }
-                case 4 -> {
-                    b = d1.num == 4;
-                    System.out.println("Initiating roll 4");
-                    System.out.println(c1.getChp1());
-                    free = -1;
-                }
-                case 5 -> {
-                    b = d1.num == 5;
-                    System.out.println("Initiating roll 5");
-                    System.out.println(c1.getChp1());
-                    free = -1;
-                }
-                case 6 -> {
-                    b = d1.num == 6;
-                    System.out.println("Initiating roll 6");
-                    System.out.println(c1.getChp1());
-                    free = -1;
-                }
-                default -> {
-                    System.out.println("where the dice at?");
-                    free = -1;
-                }
-            }// end switches
-        }// end the biggest while
+        System.out.println(c1.h());
+
+
+//        while (free != -1){
+////            free = sc.nextInt(); // not working right now so I disabled it
+//            switch (d1.num) {
+//                case 1 -> {
+//                    b = d1.num == 1;
+//                    System.out.println("Initiating roll 1");
+//                    System.out.println(c1.getChp1());
+//                    free = -1;
+//                }
+//                case 2 -> {
+//                    b = d1.num == 2;
+//                    System.out.println("Initiating roll 2");
+//                    System.out.println(c1.getChp1());
+//                    free = -1;
+//                }
+//                case 3 -> {
+//                    b = d1.num == 3;
+//                    System.out.println("Initiating roll 3");
+//                    System.out.println(c1.getChp1());
+//                    free = -1;
+//                }
+//                case 4 -> {
+//                    b = d1.num == 4;
+//                    System.out.println("Initiating roll 4");
+//                    System.out.println(c1.getChp1());
+//                    free = -1;
+//                }
+//                case 5 -> {
+//                    b = d1.num == 5;
+//                    System.out.println("Initiating roll 5");
+//                    System.out.println(c1.getChp1());
+//                    free = -1;
+//                }
+//                case 6 -> {
+//                    b = d1.num == 6;
+//                    System.out.println("Initiating roll 6");
+//                    System.out.println(c1.getChp1());
+//                    free = -1;
+//                }
+//                default -> {
+//                    System.out.println("where the dice at?");
+//                    free = -1;
+//                }
+//            }// end switches
+//        }// end the biggest while
 
 
 
